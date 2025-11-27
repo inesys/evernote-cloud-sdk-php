@@ -15,6 +15,12 @@
             "email": "laurent@sarrazin.io",
             "homepage": "http://laurent.sarrazin.io",
             "role": "Lead developer"
+        },
+        {
+            "name": "Duroy Calvin",
+            "email": "dcalvin@inesys.fr",
+            "homepage": "https://inesys.fr",
+            "role": "Contributor / Fork maintainer"
         }
     ],
     "support": {
