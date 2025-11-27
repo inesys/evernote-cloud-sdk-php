@@ -7,7 +7,6 @@
         "sdk"
     ],
     "homepage": "https://github.com/inesys/evernote-cloud-sdk-php",
-    "version": "1.0.2",
     "license": "Apache-2.0",
     "authors": [
         {
