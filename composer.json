@@ -1,14 +1,14 @@
 {
-    "name": "evernote/evernote-cloud-sdk-php",
-    "description": "Evernote Cloud SDK for PHP",
+    "name": "inesys/evernote-cloud-sdk-php",
+    "description": "Evernote Cloud SDK for PHP (PHP 8.2+ compatible fork)",
     "keywords": [
         "evernote",
         "api",
         "sdk"
     ],
-    "homepage": "https://github.com/evernote/evernote-cloud-sdk-php",
-    "version": "2.0.2",
-    "license": "Apache",
+    "homepage": "https://github.com/inesys/evernote-cloud-sdk-php",
+    "version": "1.0.0",
+    "license": "Apache-2.0",
     "authors": [
         {
             "name": "Laurent Sarrazin for Evernote",
@@ -18,17 +18,22 @@
         }
     ],
     "support": {
-        "issues": "https://github.com/evernote/evernote-cloud-sdk-php/issues",
+        "issues": "https://github.com/inesys/evernote-cloud-sdk-php/issues",
         "forum": "https://discussion.evernote.com/forum/61-evernote-for-developers/"
     },
     "require": {
-        "php": ">=5.3",
-        "ezyang/htmlpurifier": "^4.6.0",
-        "tijsverkoyen/css-to-inline-styles": "~2.2",
-        "psr/log": "~1.0"
+        "php": "^8.2 || ^8.3",
+        "ezyang/htmlpurifier": "^4.16",
+        "tijsverkoyen/css-to-inline-styles": "^2.2",
+        "psr/log": "^1.0 || ^2.0 || ^3.0"
     },
     "autoload": {
-        "psr-0": { "Evernote": "src/", "Thrift": "src/"},
-        "classmap": ["src/EDAM"]
+        "psr-4": {
+          "Evernote\\": "src/Evernote/",
+          "Thrift\\": "src/Thrift/"
+        },
+        "classmap": [
+          "src/EDAM"
+        ]
     }
 }

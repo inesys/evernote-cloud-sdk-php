@@ -38,7 +38,7 @@ class AdvancedClient
      * @param \Psr\Log\LoggerInterface|null $logger
      * @param bool $china
      */
-    public function __construct($token, $sandbox = true, $thriftClientFactory = null, LoggerInterface $logger = null, $china = false)
+    public function __construct($token, $sandbox = true, $thriftClientFactory = null, ?LoggerInterface $logger = null, $china = false)
     {
         $this->token               = $token;
         $this->sandbox             = $sandbox;
